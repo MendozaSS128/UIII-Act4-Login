@@ -17,10 +17,10 @@ class MiAplicacion extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dulcería Alegrías',
+      title: 'Spotify',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: PaginaSesion(),
     );
@@ -133,10 +133,17 @@ class PaginaSesion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Dulcería Alegrías'),
-        backgroundColor: const Color(0xffb80303),
-        elevation: 8,
+        title: Text(
+          "Spotify",
+          style: TextStyle(color: Colors.white, fontSize: 40),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Color(0xff1ee961),
+            Colors.blue,
+          ])),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -168,11 +175,14 @@ class PaginaSesion extends StatelessWidget {
             ElevatedButton(
               child: const Text(
                 'Iniciar sesión',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(340, 40),
-                backgroundColor: const Color(0xff000000),
+                backgroundColor: const Color(0xffac6ee5),
               ),
               onPressed: () => _login(context),
             ),
@@ -180,11 +190,14 @@ class PaginaSesion extends StatelessWidget {
             ElevatedButton(
               child: const Text(
                 'Registrarse',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(340, 40),
-                backgroundColor: const Color(0xff000000),
+                backgroundColor: const Color(0xffac6ee5),
               ),
               onPressed: () => _registro(context),
             ),

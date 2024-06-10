@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322366217226",
+    "project_id": "loginver2mendoza",
+    "storage_bucket": "loginver2mendoza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322366217226:android:a04ea96f6acae24f2ad3f3",
+        "android_client_info": {
+          "package_name": "com.ibarra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGlucxUROlNseUBx5fv-gFuDv1pH8RqNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
